@@ -20,9 +20,6 @@ body {
   padding-top: 30px;
 }
 
-.mr-container {
-  width: 100%;
-}
 nav button {
   color: white;
   text-decoration: none;
@@ -31,4 +28,13 @@ nav button {
 nav a {
   color: white;
   text-decoration: none;
+}
+
+.mr-wrapper {
+  height: 800px;
+}
+.mr-center {
+  position: absolute;
+  top: 50%;
+
 }
