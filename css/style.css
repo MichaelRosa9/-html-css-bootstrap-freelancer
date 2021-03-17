@@ -7,10 +7,10 @@
   height: 80px;
 }
 
-.mr-drk-blue {
+.mr-bg-drk-blue{
   background-color: #253646;
 }
-.mr-blue {
+.mr-bg-blue {
   background-color: #304A61;
 }
 
@@ -60,4 +60,15 @@ nav a {
 #about a {
   color: inherit;
   background-color: inherit;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 1px;
+}
+
+#contact-me button {
+  
 }
