@@ -14,11 +14,13 @@
   background-color: #304A61;
 }
 
-.mr-light-green {
+.mr-bg-light-green {
   background-color: #00B492;
 }
 
-
+.mr-mt-20 {
+  margin-top: 20px;
+}
 .mr-pt-30 {
   padding-top: 30px;
 }
@@ -43,9 +45,8 @@ nav a {
   height: 150px;
   width: 150px;
 }
-.mr-center {
-  position: absolute;
-  top: 50%;
+.mr-star {
+  margin: 20px auto;
 }
 
 .mr-box-100 {
@@ -54,4 +55,9 @@ nav a {
   width: 100px;
   background-color: red;
   border: 1px solid black;
+}
+
+#about a {
+  color: inherit;
+  background-color: inherit;
 }
