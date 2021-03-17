@@ -16,9 +16,16 @@ body {
 .mr-liht-green {
   background-color: #00B492;
 }
+
+
 .mr-pt-30 {
   padding-top: 30px;
 }
+.mr-pb-30 {
+  padding-bottom: 30px;
+}
+
+
 
 nav button {
   color: white;
@@ -30,11 +37,13 @@ nav a {
   text-decoration: none;
 }
 
-.mr-wrapper {
-  height: 800px;
+.mr-immage {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
 }
 .mr-center {
   position: absolute;
   top: 50%;
-
 }
+
