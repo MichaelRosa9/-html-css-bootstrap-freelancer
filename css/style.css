@@ -1,4 +1,5 @@
-body {
+
+.mr-font-white {
   color: white;
 }
 
@@ -13,7 +14,7 @@ body {
   background-color: #304A61;
 }
 
-.mr-liht-green {
+.mr-light-green {
   background-color: #00B492;
 }
 
@@ -47,3 +48,10 @@ nav a {
   top: 50%;
 }
 
+.mr-box-100 {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
