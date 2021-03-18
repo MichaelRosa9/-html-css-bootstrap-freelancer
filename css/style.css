@@ -75,6 +75,7 @@ nav a {
   font-size: 30px;
   margin: 20px auto;
 }
+
 .mr-star-line::before {
   position: absolute;
   width: 40%;  
@@ -94,6 +95,7 @@ nav a {
   display: table-cell;
   border-bottom: solid 2px;
 }
+
 
 .mr-box-100 {
   display: inline-block;
