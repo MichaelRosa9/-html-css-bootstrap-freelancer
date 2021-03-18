@@ -1,8 +1,10 @@
 
+/* FONT COLOR */
 .mr-font-white {
   color: white;
 }
 
+/* HEIGHT */
 .mr-h80 {
   height: 80px;
 }
@@ -56,6 +58,7 @@ nav a {
   text-decoration: none;
 }
 
+/* JUMBOTRON */
 .mr-jumbotron {
   width: 80%;
   max-width: 800px;
@@ -64,8 +67,32 @@ nav a {
 .mr-jumbotron img {
   width: 50%;  
 }
+
+/* STAR FONT */
+
 .mr-star {
+  position: relative;
+  font-size: 30px;
   margin: 20px auto;
+}
+.mr-star-line::before {
+  position: absolute;
+  width: 40%;  
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: '';
+  display: table-cell;
+  border-bottom: solid 2px;
+}
+.mr-star-line::after {
+  position: absolute;
+  width: 40%;  
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  display: table-cell;
+  border-bottom: solid 2px;
 }
 
 .mr-box-100 {
