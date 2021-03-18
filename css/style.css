@@ -7,6 +7,7 @@
   height: 80px;
 }
 
+/* BACKGROUND COLOR */
 .mr-bg-drk-blue{
   background-color: #253646;
 }
@@ -18,9 +19,13 @@
   background-color: #00B492;
 }
 
+/* MARGIN */
 .mr-mt-20 {
   margin-top: 20px;
 }
+
+/* PADDING */
+
 .mr-pt-30 {
   padding-top: 30px;
 }
@@ -28,11 +33,22 @@
   padding-bottom: 30px;
 }
 
+/* WRAPPER */
+.mr-wrapper-60 {
+  width:60%;
+  margin: 0 auto;
+}
 
+/* HEADER */
 
+/* NAV */
 nav button {
   color: white;
   text-decoration: none;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
 }
 
 nav a {
@@ -40,10 +56,13 @@ nav a {
   text-decoration: none;
 }
 
-.mr-immage {
-  display: inline-block;
-  height: 150px;
-  width: 150px;
+.mr-jumbotron {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+.mr-jumbotron img {
+  width: 50%;  
 }
 .mr-star {
   margin: 20px auto;
@@ -58,8 +77,7 @@ nav a {
 }
 
 #about a {
-  color: inherit;
-  background-color: inherit;
+  border-color: white;
 }
 
 input[type=text], select, textarea{
@@ -67,8 +85,4 @@ input[type=text], select, textarea{
   padding: 10px;
   border: none;
   border-bottom: solid 1px;
-}
-
-#contact-me button {
-  
 }

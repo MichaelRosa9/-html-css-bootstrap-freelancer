@@ -11,55 +11,68 @@
 <body>
 
   <header class="mr-font-white">
-
-    <div class="mr-header-top mr-h80 mr-bg-drk-blue">
-      <!--LOGO + NAV -->
+    <!--LOGO + NAV -->
+    <nav class="mr-header-top mr-h80 mr-bg-drk-blue">
       <div class="container">
         <div class="row mr-pt-30">
   
           <!-- LOGO -->
-          <div class="col-xs-6 col-sm-6 col-sm-offset-1">
+          <div class="col-xs-6">
             <span>Start Bootstrap</span>
           </div>
           <!-- /LOGO -->
   
-          <!-- NAV -->
-          <nav class="col-sm-4 ">          
-            <div class="row text-center">
-              <div class="col-xs-6 text-right visible-xs">BM</div>
-              <div class="col-sm-4 hidden-xs">
-                <a href="#">Portfolio</a>
-              </div>
-              <div class="col-sm-4 hidden-xs">
-                <a href="#">About</a>
-              </div>
-              <div class="col-sm-4 hidden-xs">
-                <a href="#">link</a>
-              </div>
+          <!-- NAV MENU-->
+          <div class="col-xs-6 ">          
+            <div class="row text-right">
+              <ul>
+
+                <!-- BUTGER MENU -->
+                <li class="visible-xs">
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle mr-bg-drk-blue mr-font-white" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>                      
+                    </ul>
+                  </div>                  
+                </li>
+                <!-- /BUTGER MENU -->
+
+                <ul class="hidden-xs">
+                  <li>
+                    PORTFOLIO
+                  </li>
+                  <li>
+                    ABOUT
+                  </li>
+                  <li>
+                    CONTACT
+                  </li>
+                </ul>
+              </ul>
             </div>
-          </nav>
-          <!-- /NAV -->
-  
-        </div>
-        <!-- <div class="container">
-        </div>  -->     
-      </div>
-      <!--/LOGO + NAV -->
-    </div>
-    <div class="header-bottom mr-bg-light-green">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 mr-pt-30 mr-pb-30 text-center">
-            <span class="mr-immage mr-bg-blue">
-              
-            </span>
-            <h1>START BOOTSTRAP</h1>
-            <div class="mr-star"> Stella</div>
-            <h3>GRAPHIC ARTIST - WEB DESIGNER - <span class="visible-xs-block">ILLUSTRATOR</span><span class="hidden-xs">ILLUSTRATOR</span></h3>          
           </div>
-        </div>
+          <!-- /NAV MENU -->  
+        </div>           
+      </div>
+    </nav>
+    <!--/LOGO + NAV -->
+      
+    <!-- JUMBOTRON -->
+    <div class="header-bottom mr-pt-30 mr-pb-30 mr-bg-light-green">
+      <div class="mr-jumbotron text-center">
+        <img src="img/avatar.svg" alt="">
+        <h1>START BOOTSTRAP</h1>
+        <div class="mr-star"> Stella</div>
+        <h3>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>        
       </div>      
     </div>
+    <!-- /JUMBOTRON -->
+
     
   </header>
 
@@ -104,10 +117,11 @@
     <!-- /PORTFOLIO -->
 
     <!-- ABOUT -->
-    <section id="about" class="mr-pb-30 mr-bg-light-green">
-      <div class="container mr-font-white text-center">
+    <section id="about" class="mr-pb-30 mr-font-white mr-bg-light-green">
+      <div class="container">
+
         <!-- TITOLO ABOUT-->
-        <div class="row">
+        <div class="row text-center">
           <div class="col-xs-12">
             <h1>About</h1>
             <div class="mr-star"> Stella</div>
@@ -115,22 +129,27 @@
         </div>
         <!-- /TITOLO ABOUT-->
 
-        <!-- TEXT ABOUT -->
-        <div class="row">
-          <div class="col-xs-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi vero tempora tempore culpa amet repellat. Eligendi quia laborum expedita blanditiis perferendis quisquam? Reprehenderit cupiditate mollitia quaerat assumenda neque consequuntur.</p>
-          </div>
-          <div class="col-xs-6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate dolorem est nisi harum tempore sint? Nisi, modi. Reiciendis soluta deserunt sed, minima perspiciatis architecto! Temporibus quasi alias incidunt ab.</p>
-          </div>
+      </div>
+      <!-- TEXT ABOUT -->
+      <div class="mr-wrapper-60">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12">
-              <a class="btn btn-default btn-sm mr-mt-20">Download</a>
+            <div class="col-xs-6">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi vero tempora tempore culpa amet repellat. Eligendi quia laborum expedita blanditiis perferendis quisquam? Reprehenderit cupiditate mollitia quaerat assumenda neque consequuntur.</p>
+            </div>
+            <div class="col-xs-6">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate dolorem est nisi harum tempore sint? Nisi, modi. Reiciendis soluta deserunt sed, minima perspiciatis architecto! Temporibus quasi alias incidunt ab.</p>
+            </div>
+            <div class="row text-center">
+              <div class="col-xs-12">
+                <a class="btn btn-default btn-sm mr-font-white mr-bg-light-green">Download</a>
+              </div>
             </div>
           </div>
+
         </div>
-        <!-- /TEXT ABOUT -->
       </div>
+      <!-- /TEXT ABOUT -->
     </section>
     <!-- /ABOUT -->
 
@@ -143,77 +162,79 @@
             <h2>CONTACT ME</h2>
             <div class="mr-star">Stella</div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12"></div>
-        </div>
+        </div>        
       </div>
 
       <!-- FORM -->
-      <div class="container mr-form">
-        <div class="row">
-          <div class="col-xs-12">
-            <input type="text" placeholder="Name">
+      <div class="mr-wrapper-60">
+        <div class="container-fluid mr-form">
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="text" placeholder="Name">
+            </div>
           </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-xs-12">
-            <input type="text" placeholder="Email Adress">            
+          <div class="row">
+            
+            <div class="col-xs-12">
+              <input type="text" placeholder="Email Adress">            
+            </div>
           </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-xs-12">            
-            <input type="text" placeholder="Phone Number">            
+          <div class="row">
+            
+            <div class="col-xs-12">            
+              <input type="text" placeholder="Phone Number">            
+            </div>
           </div>
-        </div>
-        <div class="row">          
-          <div class="col-xs-12">            
-            <textarea type="text" placeholder="Message"></textarea>
+          <div class="row">          
+            <div class="col-xs-12">            
+              <textarea type="text" placeholder="Message"></textarea>
+            </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <a class="btn btn-default btn-sm mr-font-white mr-bg-light-green">Submit</a>
+  
+          <div class="row">
+            <div class="col-xs-12">
+              <a class="btn btn-default btn-sm mr-font-white mr-bg-light-green">Submit</a>
+            </div>
           </div>
-        </div>
-
+  
+        </div>        
       </div>
       <!-- /FORM -->
 
     </section>
     <!-- /CONTACT ME -->
-
-    <!-- FOOTER -->
-    <footer class="mr-font-white">
-      <!-- FOOTER TOP -->
-      <section class="mr-bg-blue mr-pt-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem officiis iusto molestiae at quibusdam, illum, ex necessitatibus ducimus quod mollitia nemo, placeat cum maiores accusamus? Dolores error ad nostrum consectetur.</div>
-            <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem officiis iusto molestiae at quibusdam, illum, ex necessitatibus ducimus quod mollitia nemo, placeat cum maiores accusamus? Dolores error ad nostrum consectetur.</div>
-            <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem officiis iusto molestiae at quibusdam, illum, ex necessitatibus ducimus quod mollitia nemo, placeat cum maiores accusamus? Dolores error ad nostrum consectetur.</div>
-          </div>
-        </div>
-      </section>
-      <!-- /FOOTER TOP -->
-
-      <!-- FOOTER BOTTOM -->
-      <section class="text-center mr-bg-drk-blue mr-pt-30 mr-pb-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <span>Copyright</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- /FOOTER BOTTOM -->
-    </footer>
-    <!-- /FOOTER -->
   </main>
+  
+  <!-- FOOTER -->
+  <footer class="mr-font-white">
+    <!-- FOOTER TOP -->
+    <section class="mr-bg-blue mr-pt-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem officiis iusto molestiae at quibusdam, illum, ex necessitatibus ducimus quod mollitia nemo, placeat cum maiores accusamus? Dolores error ad nostrum consectetur.</div>
+          <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem officiis iusto molestiae at quibusdam, illum, ex necessitatibus ducimus quod mollitia nemo, placeat cum maiores accusamus? Dolores error ad nostrum consectetur.</div>
+          <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem officiis iusto molestiae at quibusdam, illum, ex necessitatibus ducimus quod mollitia nemo, placeat cum maiores accusamus? Dolores error ad nostrum consectetur.</div>
+        </div>
+      </div>
+    </section>
+    <!-- /FOOTER TOP -->
+
+    <!-- FOOTER BOTTOM -->
+    <section class="text-center mr-bg-drk-blue mr-pt-30 mr-pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Copyright</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- /FOOTER BOTTOM -->
+  </footer>
+  <!-- /FOOTER -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 </html>
