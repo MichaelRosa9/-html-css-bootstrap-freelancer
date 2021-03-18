@@ -65,7 +65,10 @@ nav a {
   margin: auto;
 }
 .mr-jumbotron img {
-  width: 50%;  
+  width: 30%;
+}
+.mr-jumbotron h1 {
+font-size: 40px;  
 }
 
 /* STAR FONT */
@@ -75,27 +78,44 @@ nav a {
   font-size: 30px;
   margin: 20px auto;
 }
+.mr-star-font .glyphicon-star {
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  background-color: inherit;
+}
 
 .mr-star-line::before {
   position: absolute;
-  width: 40%;  
+  width: 350px;
   top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  content: '';
-  display: table-cell;
-  border-bottom: solid 2px;
-}
-.mr-star-line::after {
-  position: absolute;
-  width: 40%;  
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
   content: '';
   display: table-cell;
   border-bottom: solid 2px;
 }
 
+/* STAR RESPONSIVE */
+@media screen and (max-width: 767px) {
+  .mr-star-font .glyphicon-star {
+    width:50px;
+  }
+  .mr-star-line::before {
+    width: 100px;
+  }
+}
+
+@media screen and (min-with: 768px)
+and (max-width: 991px) {
+  .mr-star-font .glyphicon-star {
+    width: 100px;
+  }
+  .mr-star-line::before {
+    width: 200px;
+  }
+}
 
 .mr-box-100 {
   display: inline-block;
