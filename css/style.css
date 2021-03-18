@@ -43,6 +43,9 @@
   padding-bottom: 30px;
 }
 
+.mr-padding-0 {
+  padding: 0;
+}
 /* WRAPPER */
 .mr-wrapper-60 {
   width:60%;
