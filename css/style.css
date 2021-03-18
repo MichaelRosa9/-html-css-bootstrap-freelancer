@@ -3,6 +3,9 @@
 .mr-font-white {
   color: white;
 }
+.mr-font-green {
+  color: #00B492;
+}
 
 /* HEIGHT */
 .mr-h80 {
@@ -112,13 +115,13 @@ font-size: 40px;
   }
 }
 
-@media screen and (min-with: 768px)
+@media screen and (min-width: 767px) 
 and (max-width: 991px) {
   .mr-star-font .glyphicon-star {
     width: 100px;
   }
   .mr-star-line::before {
-    width: 200px;
+    width: 250px;
   }
 }
 
@@ -146,4 +149,37 @@ input[type=text], select, textarea{
   padding: 10px;
   border: none;
   border-bottom: solid 1px;
+}
+
+
+/* FOOTER */
+
+.mr-social-link li {
+  display: inline;
+  list-style: none;
+  margin-right: 20px;
+}
+.mr-social-link a{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding: 1%;
+  font-size: 12px;
+  border: solid 1px;
+  border-radius: 50%;
+  color: inherit;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 991px) {
+  .mr-social-link a {
+    height: 45px;
+    width: 45px;
+    padding: 3%;
+    font-size: 19px;
+  }
+  .mr-social-link li {
+    margin-right: 5px;
+  }
 }
